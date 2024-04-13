@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: rubik;
+}
+
+.imgFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./images/fondoPokemon.jpg) no-repeat center/cover;
+  z-index: -1;
+}
+
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 100px;
+  color: black;
+  text-decoration: underline;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.titlePoke {
+  text-align: center;
+}
+
+.titlePoke h1 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.bola {
+  width: 105px;
+  height: 120px;
+  position: absolute;
+  transform: translateY(75px);
+  transform: translateX(-172px);
+  top:103px;
+}
+
+.titlePoke p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.divPokemon{
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 0, 255, 0.705);
+  box-shadow: 0 8px 16px rgb(0, 0, 0,1);
+  padding: 60px;
+  margin-bottom: 30px;
+}
+.lupa{
+
+  font-size: 30px;
+  color: black;
+  
+  
+}
+
+.inputPoke{
+height: 40px;
+width: 350px;
+border-radius: 5px;
+border:5px solid red ;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .bola {
+    width: 105px;
+    height: 120px;
+    position: absolute;
+    transform: translateY(200px);
+    transform: translateX(-172px);
+    top:103px;
+  }
+
+  #pokedex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+}
+
+
+
